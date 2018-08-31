@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Faq :: Mo-Ga Energy</title>
+	<link rel="stylesheet" type="text/css" href="moga.css">
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+</head>
+<body>
+	<div class="logo">
+		<img src="http://www.clipular.com/c/5276280787042304.png?k=PrCWEAe0qymUWUMti2nruWbQB5Y">
+	</div>
+	<div class="topnav">
+		<a href="./index.html">Hem</a>
+		<a class="active" href="./faq.html">FAQ</a>
+		<div class="dropdown">
+			<a class="dropbtn">Produkter 
+			<i class="fa fa-caret-down"></i>
+			</a>
+			<div class="dropdown-content">
+				<a href="./produkter.html#Persika">Persika</a>
+				<a href="./produkter.html#blåbär">Blåbär</a>
+				<a href="./produkter.html#päron">Päron</a>
+				<a href="./produkter.html#kaktus">Kaktus</a>
+				<a href="./produkter.html#björnbär">Björnbär</a>
+			</div>
+		</div>
+	</div>
+	<div>
+		<h1><br />FAQ</h1>
+	</div>
+	<div>
+		<button class="accordion">Vilka är ni?</button>
+		<div class="panel">
+			<p>Vi är två elever på nyhamnsskolan.<br /></p>
+		</div>
+
+		<button class="accordion">Varför innehåller inte era drycker BCAA?</button>
+		<div class="panel">
+			<p>Vi har EEA istället, vilket är som BCAA, bara att det innehåller fler aminosyror.<br /></p>
+		</div>
+
+		<button class="accordion">Kan barn dricka det här?</button>
+		<div class="panel">
+			<p>Kan? ja. <br />Får? ja. <br />Bör? Om barnet tränar mycket.<br /></p>
+		</div>
+		<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) 
+		{
+			acc[i].addEventListener("click", function() 
+			{
+				/* Toggle between adding and removing the "active" class,
+				to highlight the button that controls the panel */
+				this.classList.toggle("active");
+		
+				/* Toggle between hiding and showing the active panel */
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") 
+				{
+					panel.style.display = "none";
+				} 
+					else 
+				{
+					panel.style.display = "block";
+				}
+			});
+		}	</script>
+	</div>
+</body>
+</html>
