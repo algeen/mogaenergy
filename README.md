@@ -1,2 +1,0 @@
-# mogaenergy
-hello
